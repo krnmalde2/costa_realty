@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costa Realty - Luxury Real Estate</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo-costarealty.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- bootsrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- php contact form-->
+    <link rel="stylesheet" href="./php/mail.php" />
+
+    <!-- loading screen js -->
+    <div id="overlayer"></div>
+    <div class="preloader">
+      <div class="loader">
+        <img id="loading-logo" src="./images/logo-costarealty.svg" alt="" />
+      </div>
+    </div>
+  </head>
+
+  <body>
+    <!-- =================== Loading screen ================================-->
+
+    <!-- =================== Nav Bar ================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="./images/logo-costarealty.svg" alt="CostalxRealty-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./Index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Buyrent.html">buy/rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Agents.html">agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About-us.html">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact-us.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =================== Nav Bar End=============================-->
+
+    <!-- =================== Carousel =============================-->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item c1 active">
+          <img
+            src="./images/villa-real-k3/terraza.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item 2">
+          <img
+            src="./images/casa-dela-montana/casaMontana1.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item 3">
+          <img
+            src="./images/jaco-penthouse/jaco.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <!-- code de filters-->
+        <!-- <div class="carousel-filters">
+                <div class="carousel-filter-container">
+                    <div class="shortcode">
+                        <form action="" method="post" class="searchandfilter filters">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <select  name='ofcategory' id='ofcategory' class='postform upper-case' >
+                                            <option value='0' selected='selected'>Categories</option>
+                                            <option class="level-0" value="1">Rent</option>
+                                            <option class="level-0" value="32">Mortage</option>
+                                            <option class="level-0" value="18">Buy</option>
+                                        </select>
+                                        <input type="hidden" name="ofcategory_operator" value="and" />
+                                    </li>
+                                    <li>
+                                        <select  name='oftipo-de-inmueble' id='oftipo-de-inmueble' class='postform upper-case' >
+                                            <option value='0' selected='selected'>Property Type</option>
+                                            <option class="level-0" value="17">Apartment</option>
+                                            <option class="level-0" value="15">House</option>
+                                            <option class="level-0" value="29">Business Premises</option>
+                                            <option class="level-0" value="16">Terrain</option>
+                                            </select>
+                                        <input type="hidden" name="oftipo-de-inmueble_operator" value="and" />
+                                    </li>
+                                    <li>
+                                        <select  name='ofubicacion' id='ofubicacion' class='postform upper-case' >
+                                            <option value='0' selected='selected'>Location</option>
+                                            <option class="level-0" value="27">Guanacaste</option>
+                                            <option class="level-0" value="24">Puntarenas</option>
+                                            <option class="level-0" value="23">San José</option>
+                                            </select>
+                                            <input type="hidden" name="ofubicacion_operator" value="and" />
+                                    </li>
+                                    <li >
+                                        <input type="hidden" name="ofsubmitted" value="1">
+                                        <input id="submit-btn" class="upper-case submit-btn" type="submit" value="Submit">
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+        <!-- code de filters-->
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- =================== End Carousel =============================-->
+
+    <!-- =================== Featured Properties =============================-->
+    <section class="featured-properties-container">
+      <div class="heading-fp title">
+        <p>Featured Properties</p>
+      </div>
+      <div class="properties-cards">
+        <!-- Card #1 casa de la montana-->
+        <div class="card">
+          <a href="/--casa-de-la-montana.html" style="text-decoration: none">
+            <img
+              src="./images/casa-dela-montana/mia.jpeg"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Casa de la Montana</p>
+                <p id="card-subheader">House</p>
+                <div class="precio">$1,500,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>1750m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>5</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>5.5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This beautiful house is located on a spacious property,
+                surrounded by unparalleled views of the Santa Ana...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="/--casa-de-la-montana.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #2 Rocazul-->
+        <div class="card">
+          <a href="./--centro-c-yehuda.html" style="text-decoration: none">
+            <img
+              src="./images/centro-comercial-yehuda/frente.JPG"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Rocazul Center</p>
+                <p id="card-subheader">Business Premise</p>
+                <div class="precio">Prices vary</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>5000m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-store"></i></li>
+                <li><p>13</p></li>
+                <li><i class="fa-solid fa-warehouse"></i></li>
+                <li><p>14</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                Rocazul Center is a well-established and profitable business
+                center. It is located in an area of Costa Rica that is...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--centro-c-yehuda.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #3 -->
+        <!-- Card #2 Villa Real K3 -->
+        <div
+          class="card prop BUY HOUSE SANJOSE CATEGORIES PROPERTYTYPE LOCATION"
+          id=""
+        >
+          <a href="./--villa-realk3.html" style="text-decoration: none">
+            <img
+              src="./images/villa-real-k3/de arriba.png"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Villa Real K3</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> San Jose
+                </p>
+                <div class="precio">$1,050,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>1203m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>5</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>5.5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This beautiful house is located in one of the nicest
+                residentials in the country, combining nature and luxury. You
+                can enjoy the...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--villa-realk3.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vermas">
+        <a href="./Buyrent.html"><button>VIEW ALL +</button></a>
+      </div>
+    </section>
+    <!-- =================== End Featured Properties =============================-->
+
+    <!-- =================== Our Services =============================-->
+
+    <section>
+      <div class="title our-services-title">
+        <p>our services</p>
+      </div>
+      <div class="properties-cards">
+        <!-- Service #1-->
+        <div class="card service-card">
+          <div class="service-icon"><i class="fa-solid fa-list fa-2x"></i></div>
+          <div class="service-title"><p>Property Listings</p></div>
+          <div class="card-texts">
+            <p>
+              If you have a property and want to sell/rent, our team will do all
+              that's necessary from pictures & videos to reach out to people and
+              sell/rent your property as fast as we can. We also notify our
+              members about every new listing.
+            </p>
+          </div>
+        </div>
+        <!-- Service #2-->
+        <div class="card service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-chart-line fa-2x"></i>
+          </div>
+          <div class="service-title"><p>Marketing of Properties</p></div>
+          <div class="card-texts">
+            <p>
+              Through our network of contacts and marketing techniques
+              (including advertisements, videos, strategic phone-calls), We will
+              list your property and sell it for the best price to the right
+              customer as quickly as great labor allows.
+            </p>
+          </div>
+        </div>
+        <!-- Service #3-->
+        <div class="card service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-camera fa-2x"></i>
+          </div>
+          <div class="service-title"><p>Photos & Videos of Properties</p></div>
+          <div class="card-texts">
+            <p>
+              Throughout the process of listing and selling your property, we
+              will create customized and directed content for the ideal
+              customer. We will also demonstrate for what activities your
+              property can be used that caters to the right client.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vermas vermas-contact">
+        <a href="./Contact-us.html"><button>Contact</button></a>
+      </div>
+    </section>
+
+    <!-- =================== End Our Services =============================-->
+
+    <!-- =================== About Us =============================-->
+    <section class="about-us-home">
+      <div class="aboutus-home">
+        <div
+          id="aboutus-costarealty"
+          class="title"
+          style="text-transform: none"
+        >
+          <p style="font-size: 30px">About us</p>
+        </div>
+        <div
+          id="about-costarealty"
+          class="title"
+          style="
+            font-size: 45px;
+            text-transform: none;
+            padding-bottom: 1.5rem;
+            line-height: 40px;
+            font-weight: 600;
+          "
+        >
+          <p>Costa Realty Group</p>
+        </div>
+        <div class="card-text" style="color: white; letter-spacing: 2px">
+          <p>
+            Costa Realty is a marketplace for real estate in Costa Rica. We
+            manage your property's marketing, take photos and videos, and then
+            publish them on our site.
+          </p>
+          <p>
+            Here you will find different types of properties. We have big pieces
+            of land, estates, houses, and smaller properties all around the
+            country.
+          </p>
+        </div>
+        <div class="vermas vermas-about-home">
+          <a href="./About-us.html"><button>MORE</button></a>
+        </div>
+      </div>
+      <div class="aboutus-home-img">
+        <!-- <img src="./images/coming-soon.gif" alt=""> -->
+      </div>
+    </section>
+    <!-- =================== End About Us =============================-->
+
+    <!-- =================== Federico Ramirez =============================-->
+    <section class="fede-profile">
+      <div class="fede-pic">
+        <img src="./images/fede-foto.jpeg" alt="" />
+      </div>
+      <div class="fede-info">
+        <div class="title-fede">
+          <p>Federico Ramirez</p>
+        </div>
+        <div class="subtitle-fede">
+          <p>Partner & Agent</p>
+        </div>
+        <div class="bio">
+          <p>
+            Federico is a young and energetic businessman with very clear and
+            high expectations for himself and his company. Federico has a clear
+            vision of where this company is going, and knows how to get it
+            there. With great determination and a very charming personality, you
+            will enjoy making business with him.
+          </p>
+        </div>
+        <div class="whatsapp">
+          <a
+            href="tel:+(506)8833-5473"
+            style="text-decoration: none; color: #777777"
+          >
+            <ul>
+              <li class="hoveer">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+              </li>
+              <li class="hoveer">
+                <p id="wasap" style="font-size: 18px">(+506) 8333-7426</p>
+              </li>
+            </ul>
+          </a>
+        </div>
+        <div class="socials">
+          <a
+            class="hoveer"
+            target="blank"
+            href="https://www.facebook.com/felipe.ramirez.1428921/"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a
+            class="hoveer"
+            target="blank"
+            href="https://www.instagram.com/costa.realty/"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a
+            class="hoveer"
+            target="blank"
+            href="mailto:federico.r@costalxrealty.com"
+            ><i class="fa-solid fa-envelope fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- =================== End Federico Ramirez =============================-->
+
+    <!-- =================== Contact Form =============================-->
+    <footer class="footer-area contact-form">
+      <div class="fede-info success">
+        <div class="title-fede title-fedes">
+          <p>Ask an agent</p>
+        </div>
+        <div class="subtitle-fede title-fedess">
+          <p>We're here to help 7 days a week.</p>
+        </div>
+        <form
+          id="form"
+          onsubmit="event.preventDefault(); validateForm() "
+          action="./php/mail.php"
+          name="contact-form"
+          method="post"
+          autocomplete="off"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <div class="form-input">
+            <label> Name: <span>*</span></label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Please enter your name"
+            />
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-input">
+            <label> Email: <span>*</span></label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Please enter your email"
+              id="email"
+            />
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-input">
+            <label> Message: <span>*</span></label>
+            <textarea
+              name="message"
+              placeholder="How can I help you?"
+              id="message"
+            ></textarea>
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-submit">
+            <input class="submit-btn" type="submit" />
+          </div>
+        </form>
+      </div>
+
+      <!-- =================== End Contact Form =============================-->
+
+      <!-- =================== Footer =================================-->
+      <p
+        style="
+          letter-spacing: 0px;
+          border: 0.5px solid dimgray;
+          margin: 2rem 5rem;
+        "
+      ></p>
+      <div class="container">
+        <div class="">
+          <div class="social text-center">
+            <a
+              class="hoveer"
+              target="blank"
+              href="https://www.facebook.com/felipe.ramirez.1428921/"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a
+              class="hoveer"
+              target="blank"
+              href="https://www.instagram.com/costa.realty/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a
+              class="hoveer"
+              target="blank"
+              href="mailto:federico.r@costalxrealty.com"
+              ><i class="fa-solid fa-envelope fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =================== Footer End ================================-->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $(".preloader").delay(1500).fadeOut("slow");
+        $("#overlayer").delay(1500).fadeOut("slow");
+      });
+    </script>
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

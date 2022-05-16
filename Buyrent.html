@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costa Realty - Buy/Rent</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo-costarealty.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- bootsrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <!-- =================== Nav Bar ================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="./images/logo-costarealty.svg" alt="CostalxRealty-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./Index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Buyrent.html">buy/rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Agents.html">agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About-us.html">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact-us.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =================== Nav Bar End=============================-->
+
+    <!-- ===================== Filter section ======================= -->
+    <section class="property-filters">
+      <div class="title">
+        <h1>Find your property</h1>
+      </div>
+      <div class="filter-form-property">
+        <div class="filter">
+          <select id="" class="postform1 upper-case">
+            <option value="" selected="selected">Categories</option>
+            <option class="" value="">Rent</option>
+            <option class="" value="">Buy</option>
+          </select>
+        </div>
+        <div class="filter">
+          <select id="" class="postform2 upper-case">
+            <option value="" selected="selected">Property Type</option>
+            <option class="" value="">Apartment</option>
+            <option class="" value="">House</option>
+            <option class="" value="">Business Premises</option>
+            <option class="" value="">terrain</option>
+          </select>
+        </div>
+        <div class="filter">
+          <select id="" class="postform3 upper-case">
+            <option value="" selected="selected">Location</option>
+            <option class="" value="">Guanacaste</option>
+            <option class="" value="">San Jose</option>
+            <option class="" value="">Puntarenas</option>
+            <option class="" value="">Alajuela</option>
+          </select>
+        </div>
+      </div>
+      <div class="price-range">
+        <p>
+          <label for="amount" style="letter-spacing: 2px">Price range</label>
+        </p>
+        <div id="slider-range" readonly contenteditable="false"></div>
+        <p>
+          <input type="text" id="amount" />
+        </p>
+      </div>
+    </section>
+    <!-- ===================== End Filter section ======================= -->
+
+    <!-- ===================== Our Listings ============================-->
+    <section class="featured-properties-container">
+      <div class="heading-fp title">
+        <p>Our Listings</p>
+      </div>
+      <div class="properties-cards">
+        <!-- Card #1 Casa Montana -->
+        <div
+          class="card prop BUY HOUSE SANJOSE CATEGORIES PROPERTYTYPE LOCATION"
+        >
+          <a href="/--casa-de-la-montana.html" style="text-decoration: none">
+            <img
+              src="./images/casa-dela-montana/mia.jpeg"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Casa de la Montana</p>
+
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> San Jose
+                </p>
+                <div class="precio">$1,500,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>1750m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>5</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>5.5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This beautiful house is located on a spacious property,
+                surrounded by unparalleled...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="/--casa-de-la-montana.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #2 Villa Real K3 -->
+        <div
+          class="card prop BUY HOUSE SANJOSE CATEGORIES PROPERTYTYPE LOCATION"
+          id=""
+        >
+          <a href="./--villa-realk3.html" style="text-decoration: none">
+            <img
+              src="./images/villa-real-k3/de arriba.png"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Villa Real K3</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> San Jose
+                </p>
+                <div class="precio">$1,050,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>1203m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>5</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>5.5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This beautiful house is located in one of the nicest
+                residentials in the country, combining nature...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--villa-realk3.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #3 Jaco Bay Penthouse-->
+        <!-- <div
+          class="card prop BUY RENT APARTMENT PUNTARENAS CATEGORIES PROPERTYTYPE LOCATION"
+          id=""
+        >
+          <a href="./--jaco-penthouse.html" style="text-decoration: none">
+            <img
+              src="./images/coming-soon.gif"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Jaco Bay Penthouse</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> Puntarenas
+                </p>
+                <div class="precio">$750,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>200m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>4</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>3.5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                The property is surrounded by high-value investment projects
+                such as Místico and Los Sueños...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--jaco-penthouse.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Card #4 Azahar -->
+        <div
+          class="card prop BUY HOUSE TERRAIN ALAJUELA CATEGORIES PROPERTYTYPE LOCATION"
+          id=""
+        >
+          <a href="./--azahar.html" style="text-decoration: none">
+            <img
+              src="./images/azahar/Casa desde Arriba.jpg"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Azahar</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> Alajuela
+                </p>
+                <div class="precio">$2,100,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li><p>106.3ac</p></li>
+                <li><i class="fa-solid fa-house-chimney"></i></li>
+                <li>
+                  <p>450m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-bed"></i></li>
+                <li><p>5</p></li>
+                <li><i class="fa-solid fa-toilet"></i></li>
+                <li><p>5</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This beautiful 43 hectares farm, is a paradisiacal jewel in a
+                magical place, surrounded by...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--azahar.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #5 Rocazul Center Yehuda-->
+        <div
+          class="card prop BUY RENT BUSINESSPREMISES SANJOSE CATEGORIES PROPERTYTYPE LOCATION"
+        >
+          <a href="./--centro-c-yehuda.html" style="text-decoration: none">
+            <img
+              src="./images/centro-comercial-yehuda/frente.JPG"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Rocazul Center</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> San Jose
+                </p>
+                <div class="precio">Prices vary</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>5000m<sup>2</sup></p>
+                </li>
+                <li><i class="fa-solid fa-store"></i></li>
+                <li><p>13</p></li>
+                <li><i class="fa-solid fa-warehouse"></i></li>
+                <li><p>14</p></li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                Rocazul Center is a well-established and profitable business
+                center. It is located in...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--centro-c-yehuda.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #6 Dandera FedeP -->
+        <!-- <div class="card">
+                <a href="./--dandera.html" style="text-decoration: none;">
+                <img src="./images/coming-soon.gif" class="card-img-top" style="object-fit: cover;" alt="..."></a>
+                <div class="card-body">
+                    <div class="card-div1">
+                        <div class="card-title">
+                            <p id="card-title">Dandera</p>
+                            <p id="card-subheader">House</p>
+                        </div>
+                        <div class="precio">
+                            $1,500,000
+                        </div>
+                    </div>
+                    <div class="card-div2">
+                        <ul style="list-style:none; ">
+                            <li><i class="fa-solid fa-ruler-combined "></i></li>
+                            <li><p>1750m<sup>2</sup></p></li>
+                            <li><i class="fa-solid fa-bed"></i></li>
+                            <li><p>5</p></li>
+                            <li><i class="fa-solid fa-toilet"></i></li>
+                            <li><p>5</p></li>
+                        </ul>
+                    </div>
+                    <div class="card-div3">
+                        <p class="card-text">Cuenta con parqueo y asimismo para visitas.Tiene una Casa club con una gran piscina. Elevadores, Áre...</p>
+
+                    </div>
+                    <div class="card-div4" style="padding-top: 5vh;">
+                        <a href="#"><button> MORE +</button></a>
+                    </div>
+                </div>
+            </div> -->
+        <!-- Card #7 Lote Casa Yehuda -->
+        <div
+          class="card prop BUY TERRAIN SANJOSE CATEGORIES PROPERTYTYPE LOCATION"
+        >
+          <a href="./--lote-yehuda.html" style="text-decoration: none">
+            <img
+              src="./images/lote-yehuda/atras.JPG"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Lot Yehuda</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> San Jose
+                </p>
+                <div class="precio">$1,100,000</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>2600m<sup>2</sup></p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This excellent property has great benefits and details of
+                interest. It is located in one of the most...
+              </p>
+            </div>
+            <div class="card-div4" style="padding-top: 5vh">
+              <a href="./--lote-yehuda.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card #8 Propiedad Liberia -->
+        <div
+          class="card prop BUY TERRAIN GUANACASTE CATEGORIES PROPERTYTYPE LOCATION"
+        >
+          <a href="./--liberia-propiedad.html" style="text-decoration: none">
+            <img
+              src="./images/liberia/plaza.jpg"
+              class="card-img-top"
+              style="object-fit: cover"
+              alt="..."
+          /></a>
+          <div class="card-body">
+            <div class="card-div1">
+              <div class="card-title">
+                <p id="card-title">Liberia Property</p>
+                <p id="card-subheader">
+                  <i class="fa-solid fa-location-dot"></i> Guanacaste
+                </p>
+                <div class="precio">$1,500,000 or $3,500/month</div>
+              </div>
+            </div>
+            <div class="card-div2">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-ruler-combined"></i></li>
+                <li>
+                  <p>12500m<sup>2</sup></p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-div3">
+              <p class="card-text">
+                This property is of commercial interest. It is a large lot of
+                1.5 hectares with two fronts, the...
+              </p>
+            </div>
+            <div class="card-div4">
+              <a href="./--liberia-propiedad.html"><button>MORE +</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================== End Our Listings ======================== -->
+
+    <!-- =================== Contact Form =============================-->
+    <footer class="footer-area contact-form">
+      <div class="fede-info">
+        <div class="title-fede title-fedes">
+          <p>Ask an agent</p>
+        </div>
+        <div class="subtitle-fede title-fedess">
+          <p>We're here to help 7 days a week.</p>
+        </div>
+        <form
+          id="form"
+          onsubmit="event.preventDefault(); validateForm()"
+          action="./php/mail.php"
+          name="contact-form"
+          method="post"
+          autocomplete="off"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <div class="form-input">
+            <label> Name: <span>*</span></label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Please enter your name"
+            />
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-input">
+            <label> Email: <span>*</span></label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Please enter your email"
+              id="email"
+            />
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-input">
+            <label> Message: <span>*</span></label>
+            <textarea
+              name="message"
+              placeholder="How can I help you?"
+              id="message"
+            ></textarea>
+          </div>
+          <br /><small class="error"></small><br />
+          <div class="form-submit">
+            <input class="submit-btn" type="submit" />
+            <p id="success"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- =================== End Contact Form =============================-->
+
+      <!-- =================== Footer =================================-->
+      <p
+        style="
+          letter-spacing: 0px;
+          border: 0.5px solid dimgray;
+          margin: 2rem 5rem;
+        "
+      ></p>
+      <div class="container">
+        <div class="">
+          <div class="social text-center">
+            <a
+              class="hoveer"
+              target="blank"
+              href="https://www.facebook.com/felipe.ramirez.1428921/"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a
+              class="hoveer"
+              target="blank"
+              href="https://www.instagram.com/costa.realty/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a
+              class="hoveer"
+              target="blank"
+              href="mailto:federico.r@costalxrealty.com"
+              ><i class="fa-solid fa-envelope fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =================== Footer End ================================-->
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
