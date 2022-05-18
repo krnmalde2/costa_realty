@@ -164,6 +164,12 @@
     padding: 2rem 2rem;
   }
 }
+@media only screen and (max-device-width: 500px) {
+ .preloader,
+  .loader {
+    display: none; 
+  } 
+}
 @media only screen and (max-width: 600px) {
   .featured-properties-container {
     display: flex;
