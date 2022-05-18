@@ -169,6 +169,12 @@
   .loader {
     display: none; 
   } 
+  .navbar-brand img {
+    height: 70px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .featured-properties-container {
