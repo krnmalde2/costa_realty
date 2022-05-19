@@ -180,7 +180,11 @@
   }
   .navbar>.container-fluid{
     padding: 0
-    justify-content: space-evenly;
+    justify-content: start;
+  }
+  .sandwich{
+    display: flex;
+    justify-content: space-between;
   }
   .filter select {
     background-color: #fff;
