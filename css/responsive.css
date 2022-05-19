@@ -178,8 +178,8 @@
     padding-right: 0;
     width: auto;
   }
-  .container-fluid{
-    flex-wrap: nowrap;
+  .navbar>.container-fluid{
+    flex-wrap: nowrap !important;
   }
   .filter select {
     background-color: #fff;
