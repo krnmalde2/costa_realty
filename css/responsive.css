@@ -180,6 +180,10 @@
   }
   .navbar>.container-fluid{
     flex-wrap: nowrap !important;
+    position:relative;
+  }
+  .navbar-collapse{
+    position: absolute;
   }
   .filter select {
     background-color: #fff;
