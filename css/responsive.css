@@ -170,7 +170,7 @@
     display: none; 
   } 
   .navbar-brand img {
-    height: 70px;
+    height: 50px;
   }
   .navbar-brand {
     margin-right: 0;
@@ -180,6 +180,7 @@
   }
   .filter select {
     background-color: #fff;
+    color: black;
   }
 }
 @media only screen and (max-width: 600px) {
