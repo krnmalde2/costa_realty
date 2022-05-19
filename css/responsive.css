@@ -178,6 +178,9 @@
     padding-right: 0;
     width: auto;
   }
+  .container-fluid{
+    flex-wrap: nowrap;
+  }
   .filter select {
     background-color: #fff;
     color: black;
