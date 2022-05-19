@@ -178,6 +178,9 @@
     padding-right: 0;
     width: auto;
   }
+  .filter select {
+    background-color: #fff;
+  }
 }
 @media only screen and (max-width: 600px) {
   .featured-properties-container {
@@ -253,6 +256,7 @@
     width: 40vw;
     height: 5vh;
     font-size: 11px;
+    background-color: #fff;
   }
   .top2-services {
     padding: 2rem 5rem;
@@ -333,7 +337,7 @@
 }
 @media only screen and (max-width: 980px) {
   .nav-link {
-    width: 15%;
+    width: auto;
   }
   .navbar-nav li {
     padding-left: 1.4rem;
