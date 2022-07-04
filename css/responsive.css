@@ -256,6 +256,10 @@
   .agent-left {
     padding-left: 25%;
   }
+  .property-info iframe{
+    width: 300px !important;
+    height: 200px !important;
+  }
 }
 @media only screen and (max-width: 680px) {
   .filter-form-property {
